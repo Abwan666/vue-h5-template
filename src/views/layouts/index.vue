@@ -25,8 +25,8 @@ export default {
             name: 'Home'
           },
           icon: {
-            active: 'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
-            inactive: './img/index.svg'
+            active: '../assets/img/index_select.png',
+            inactive: '../assets/img/index.png'
           }
         },
         {
@@ -35,8 +35,8 @@ export default {
             name: 'About'
           },
           icon: {
-            active: './img/index_select.svg',
-            inactive: './img/index.svg'
+            active: '../assets/img/index_select.png',
+            inactive: '../assets/img/index.png'
           }
         }
       ]

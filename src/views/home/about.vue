@@ -41,14 +41,14 @@ export default {
       window.location.href = 'https://github.com/sunniejs/vue-h5-template'
     },
 		goUser() {
-			this.$router.push({name: 'User', query: { id: 1, vip: false }});
+			this.$router.push({name: 'User', query: { id: 1, vip: false }})
 		},
 		onCount() {
-			this.number++;
+			this.number++
 		}
   }
 }
 </script>
 <style lang="scss">
-	
+
 </style>

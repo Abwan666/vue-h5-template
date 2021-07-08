@@ -24,14 +24,20 @@ export default {
           to: {
             name: 'Home'
           },
-          icon: 'home-o'
+          icon: {
+            active: 'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
+            inactive: './img/index.svg'
+          }
         },
         {
           title: '关于我',
           to: {
             name: 'About'
           },
-          icon: 'user-o'
+          icon: {
+            active: './img/index_select.svg',
+            inactive: './img/index.svg'
+          }
         }
       ]
     }

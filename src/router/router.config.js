@@ -19,17 +19,23 @@ export const constantRouterMap = [
         meta: { title: '首页', keepAlive: false }
       },
       {
-        path: '/about',
-        name: 'About',
-        component: () => import('@/views/home/about'),
-        meta: { title: '关于我', keepAlive: false }
+        path: '/classification',
+        name: 'Classification',
+        component: () => import('views/home/classification'),
+        meta: { title: '分类', keepAlive: false }
       },
 			{
-			  path: '/user',
-			  name: 'User',
-			  component: () => import('@/views/home/user'),
-			  meta: { title: '用户', keepAlive: false }
-			}
+			  path: '/shoppingcart',
+			  name: 'ShoppingCart',
+			  component: () => import('views/home/shoppingcart'),
+			  meta: { title: '购物车', keepAlive: false }
+			},
+      {
+        path: '/mine',
+        name: 'Mine',
+        component: () => import('views/home/mine'),
+        meta: { title: '我的', keepAlive: false }
+      }
     ]
   }
 ]

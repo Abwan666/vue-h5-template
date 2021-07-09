@@ -14,6 +14,15 @@
 
 <script>
 import TabBar from '@/components/TabBar'
+import index from '../../assets/img/index.png'
+import index_select from '../../assets/img/index_select.png'
+import class_u from '../../assets/img/class.png'
+import class_select from '../../assets/img/class_select.png'
+import shoppingcart_select from '../../assets/img/shoppingcart_select.png'
+import shoppingcart from '../../assets/img/shoppingcart.png'
+import mine from '../../assets/img/mine.png'
+import mine_select from '../../assets/img/mine_select.png'
+
 export default {
   name: 'AppLayout',
   data() {
@@ -25,25 +34,45 @@ export default {
             name: 'Home'
           },
           icon: {
-            active: '../assets/img/index_select.png',
-            inactive: '../assets/img/index.png'
+            active: index_select,
+            inactive: index
           }
         },
         {
-          title: '关于我',
+          title: '分类',
           to: {
-            name: 'About'
+            name: 'Classification'
           },
           icon: {
-            active: '../assets/img/index_select.png',
-            inactive: '../assets/img/index.png'
+            active: class_select,
+            inactive: class_u
+          }
+        },
+        {
+          title: '购物车',
+          to: {
+            name: 'ShoppingCart'
+          },
+          icon: {
+            active: shoppingcart_select,
+            inactive: shoppingcart
+          }
+        },
+        {
+          title: '我的',
+          to:{
+            name: 'Mine'
+          },
+          icon: {
+            active: mine_select,
+            inactive: mine
           }
         }
       ]
     }
   },
   components: {
-    TabBar
+    TabBar,
   },
   methods: {
     handleChange(v) {
